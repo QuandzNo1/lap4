@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lap10.css">
+          <title>Tiktok</title>
+           <style>
+            .circle {
+    fill: #46d03f;
+    stroke: #b12241;
+    stroke-width: 0.2em;
+        }
+.hv{
+    height: 100px; 
+    width: 100px;
+    border: 10px solid #46d03f;
+    border-radius: 5px;
+    animation: traitym 1s ease infinite;
+}
+.htg{
+    stroke-width: 0em;
+    stroke: #46d03f;
+}
+ellipse {
+    fill: white;
+    stroke: red;
+    stroke-width: 1em;
+}
+@keyframes traitym {
+	66% {
+		transform: scale(.8,.8);
+        background-color:#b12241;
+	}
+	100% {
+		transform: scale(1,1);
+        background-color: #62a759;
+	}
+}
+.dt{
+    border: red dotted 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.ds{
+    border: dashed 4px red;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.sl{
+    border: red solid 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.is{
+    border: red inset 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.db{
+    border: red double 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.gr{
+    border: red groove 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.rg{
+    border: red ridge 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.os{
+    border: red outset 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+           </style>
+    
+</head>
+<body>
+    <input type="text" list="ide">
+    Các ngành đạo tạo:    <datalist id="ide"> 
+                              <option value="Công nghệ thông tin"></option>
+                              <option value="Ngôn ngữ Anh"></option>
+                              <option value="Khoa học máy tính"></option>
+                              <option value="Ngôn ngữ Nhật"></option>
+                              <option value="Kế toán"></option>
+                         </datalist><br><br>
+
+    Các nhân vật anime chất:<select>
+        <option>Naruto</option>
+        <option>Goku</option>
+        <option>Vegeta</option>
+        <option>Luffy</option>
+        <option>Zoro</option>
+    </select>
+    <svg viewBox="0 0 120 120" width="120" height="120">
+        <circle class="circle" cx="60" cy="60" r="50"/>
+      </svg>                                
+    
+        <svg class="hv">
+            <path d="M 10,30
+            A 20,20 0 0,1 50,30
+            A 20,20 0 0,1 90,30
+            Q 90,60,50,90
+            Q 10,60,10,30 z" fill="red" align="center"></path>
+        </svg><br>
+      <div class="htg"> 
+        <svg width='300' height='200' style='background: #d81a1a'>
+        <polygon points='150,30 105,165 215,80 85,80 195,165' fill='#FFD600'/>
+     </svg>
+    </div>
+    <svg viewBox="0 0 120 120" width="150" height="150">
+       <ellipse cx="60" cy="60" rx="50" ry="15"></ellipse>
+    </svg>
+   <svg width="200" height="250">
+      
+        <line x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+        <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+            stroke="teal" fill="transparent" stroke-width="5"/>
+      
+        <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="plum" stroke-width="5"/>
+      </svg><br><br>
+      <form>
+        <b class="dt">Kiểu viền dotted</b> &ensp;
+        <b class="ds">Kiểu viền dashed</b> &ensp;
+        <b class="sl">Kiểu viền solid</b>  &ensp;
+        <b class="is">Kiểu viền inset</b><br><br><br>
+        <b class="db">Kiểu viền double</b> &ensp;
+        <b class="gr">Kiểu viền groove</b> &ensp;
+        <b class="rg">Kiểu viền ridge</b> &ensp;
+        <b class="os">Kiểu viền outset</b> &ensp;
+      </form>
+
+</body>
+</html>

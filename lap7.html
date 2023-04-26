@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Đức Thanh</title>
+  <style>
+    tr{
+      background-color: aqua;
+    }
+    th{
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <form action="formdangky" method="post">
+    <table width="400px" height="350px" border="1" align="center" cellpadding="5">
+      <tr>
+        <th colspan="2" style="color:blueviolet">Phiếu đăng kí tham gia chương trình khuyến mãi</th>
+      </tr>
+      <tr>
+        <td>Họ tên</td>
+        <td>
+          <input type="text" name="hoten" size="20" placeholder="">
+        </td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td>
+          <input type="text" name="diachi" size="20" placeholder="">
+        </td>
+      </tr>
+      <tr>
+        <td>Điện thoại</td>
+        <td>
+          <input type="text" name="diachi" size="20" placeholder="">
+        </td>
+      </tr>
+      <tr>
+        <td>Giới tính</td>
+        <td>
+          <label>
+            <input type="radio" name="gioitinh" id="nam"> Nam
+          </label>
+          <label>
+            <input type="radio" name="gioitinh" id="nu"> Nữ
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Nghề nghiệp
+        </td>
+        <td>
+          <select name="nghenghiep">
+            <option value="bacsi">Bác sĩ</option>
+            <option value="bacsi">Kĩ sư</option>
+            <option value="bacsi">Giáo viên</option>
+            <option value="bacsi">Khác</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Chọn sản phẩm tham gia</td>
+        <td>
+          <select name="sanpham">
+            <option value="sanpham">Kem đánh răng</option>
+          </select> 
+        </td>
+      </tr>
+      <tr>
+        <td>Số người dự đoán</td>
+        <td>
+          <input type="text" name="songuoidudoan" size="20" placeholder="">
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2" style="background-color: aqua;">
+          <input type="button"  name="bt_bth" id="" value="Đồng ý" onclick="alert('Bạn đã đăng ký thành công!!!')">
+        </th>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

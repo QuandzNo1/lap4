@@ -1,0 +1,87 @@
+.circle {
+    fill: #46d03f;
+    stroke: #b12241;
+    stroke-width: 0.2em;
+        }
+.hv{
+    height: 100px; 
+    width: 100px;
+    border: 10px solid #46d03f;
+    border-radius: 5px;
+    animation: traitym 1s ease infinite;
+}
+.htg{
+    stroke-width: 0em;
+    stroke: #46d03f;
+}
+ellipse {
+    fill: white;
+    stroke: red;
+    stroke-width: 1em;
+}
+@keyframes traitym {
+	66% {
+		transform: scale(.8,.8);
+        background-color:#b12241;
+	}
+	100% {
+		transform: scale(1,1);
+        background-color: #62a759;
+	}
+}
+.dt{
+    border: red dotted 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.ds{
+    border: dashed 4px red;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.sl{
+    border: red solid 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.is{
+    border: red inset 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.db{
+    border: red double 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.gr{
+    border: red groove 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.rg{
+    border: red ridge 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
+.os{
+    border: red outset 4px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 6px 6px 10px;
+    text-align: center;
+}
